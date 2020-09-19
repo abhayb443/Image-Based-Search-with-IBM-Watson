@@ -6,7 +6,7 @@ import httplib2
 
 
 def image_search():
-    IBM_API_KEY = 'g1n50O5_I0sRiJGkoGy7x2cwdRKgyCpc9lLF-T2zA0po'
+    IBM_API_KEY = 'api-key'
     IBM_URL = 'https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/c0aa675b-7bdd-42b8-bd93-df6d6fc3a5ce'
 
     # # Passing API KEY and URL to the Visual Recognition
@@ -34,8 +34,8 @@ def image_search():
 
 
 def nearby_places(latitude, longitude, query):
-    rest_api = '8HnOw70LjqOg4ARPX4pt1OOvP6_H4b_GA2uSWIFtO0A'
-    app_id = 'sXPR28hTcgrpcSHY25rI'
+    rest_api = 'rest-api-key'
+    app_id = 'rest-app-id'
     url = ('https://places.ls.hereapi.com/places/v1/suggest?at={0}%2C{1}&q={2}&apiKey={3}'.format(latitude, longitude,
                                                                                                   query, rest_api))
     h = httplib2.Http()
